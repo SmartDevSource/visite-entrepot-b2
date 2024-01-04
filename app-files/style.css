@@ -827,3 +827,11 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+@media (max-width: 500px) {
+  .logo{
+    width: 100px;
+    top: 60px !important;
+    right: 10px !important;
+  }
+}
