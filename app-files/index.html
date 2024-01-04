@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VISITE ENTREPOT B2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-entree-entrepot">
+        <li class="text">ENTREE ENTREPOT</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-poste-de-garde-">
+        <li class="text">POSTE DE GARDE </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-facade-entrepot">
+        <li class="text">FACADE ENTREPOT</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-entree-personel">
+        <li class="text">ENTREE PERSONEL</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-salle-de-repos--refectoire">
+        <li class="text">SALLE DE REPOS / REFECTOIRE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-vestiaire">
+        <li class="text">VESTIAIRE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-acces-entrepot">
+        <li class="text">ACCES ENTREPOT</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-cellule-a---store-banne-">
+        <li class="text">CELLULE A - STORE BANNE </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-cellule-a---kto">
+        <li class="text">CELLULE A - KTO</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-cellule-b---store-banne-1">
+        <li class="text">CELLULE B - STORE BANNE 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-cellule-b---store-banne-interieur-b">
+        <li class="text">CELLULE B - STORE BANNE INTERIEUR B</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-cellule-b---reception--store-banne">
+        <li class="text">CELLULE B - RECEPTION / STORE BANNE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-cellule-c---zone-attente">
+        <li class="text">CELLULE C - ZONE D'ATTENTE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-cellule-c---packing-flux-lhn-">
+        <li class="text">CELLULE C - PACKING FLUX L/HN </li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-cellule-c---plan-incline">
+        <li class="text">CELLULE C - PLAN INCLINE</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-cellule-d---masse-1">
+        <li class="text">CELLULE D - MASSE 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-cellule-d---masse-2">
+        <li class="text">CELLULE D - MASSE 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-cellule-e---rack-1">
+        <li class="text">CELLULE E - RACK 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-cellule-e---rack-2">
+        <li class="text">CELLULE E - RACK 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-cellule-e---rack-3">
+        <li class="text">CELLULE E - RACK 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-cellule-f">
+        <li class="text">CELLULE F</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<img class = "logo" src = "./img/geodis_blue.svg">
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
