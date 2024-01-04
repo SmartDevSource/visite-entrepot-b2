@@ -260,13 +260,13 @@
     window.marzipano_viewer = viewer;
   }
 
-  // function alertYaw() {
-  //   console.log("*".repeat(50))
-  //   console.log("Yaw : "+marzipano_viewer.view().yaw());
-  //   console.log("Pitch : "+marzipano_viewer.view().pitch());
-  //   console.log("*".repeat(50))
-  // }
-  // window.addEventListener('click', alertYaw);
+  function alertYaw() {
+    console.log("*".repeat(50))
+    console.log("Yaw : "+marzipano_viewer.view().yaw());
+    console.log("Pitch : "+marzipano_viewer.view().pitch());
+    console.log("*".repeat(50))
+  }
+  window.addEventListener('click', alertYaw);
 
   function updateSceneList(scene) {
     for (var i = 0; i < sceneElements.length; i++) {

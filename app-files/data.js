@@ -622,8 +622,8 @@ var APP_DATA = {
         "fov": 1.4010588678110822
       },
       "backViewParameters": {
-        "yaw": -2.37,
-        "pitch": 0.06,
+        "yaw": 0.67,
+        "pitch": 0.160,
         "fov": 1.4010588678110822
       },
       "linkHotspots": [
